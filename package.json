@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a backend at chai aur code ",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
@@ -13,6 +13,7 @@
   "author": "dhruvin patel",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "prettier": "^3.4.2"
   }
 }
