@@ -1,10 +1,11 @@
 const asyncHandler = (requestHandler) => {
-    (req,res,next)=>{
+    return (req,res,next)=>{
         Promise.resolve(requestHandler(req,res,next)).catch((err)=>next(err))
     }
 }
 
 export {asyncHandler}
+//higher order function means except as a function and return also as a functino
 //try catch wala
 // const asyncHandler = (fn) => async(req,res,next) =>{
 //     try{
