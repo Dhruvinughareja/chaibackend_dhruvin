@@ -1,7 +1,7 @@
 import mongoose, {Schema} from "mongoose";
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
-//this user is direct contect with the database 
+//this user is direct contect with the database
 const userSchema = new Schema(
     {
         username: {
@@ -89,5 +89,6 @@ userSchema.methods.generateRefreshToken = function(){
         }
     )
 }
+
 
 export const User = mongoose.model("User", userSchema)
